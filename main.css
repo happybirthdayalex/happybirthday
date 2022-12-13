@@ -1,0 +1,35 @@
+html {
+  background-color: rgb(222, 186, 255);
+  color: rgb(47, 0, 90);
+}
+
+#main {
+  background-color: rgb(191, 122, 255);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+#status {
+  font-size: xxx-large;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin: 20px;
+}
+
+#generateBtn {
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: 15px;
+  background-color: rgb(107, 255, 179);
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+}
+
+#disclaimer {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
