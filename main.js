@@ -86,5 +86,7 @@ function getStatus() {
 window.onload = () => {
   const btn = document.getElementById("generateBtn");
   btn.addEventListener('click', getStatus);
+  const ferrari = new Audio("./media/Ferrari.mp3");
+  ferrari.play();
   getStatus();
 };
