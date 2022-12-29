@@ -1,21 +1,32 @@
 html {
-  background-color: rgb(222, 186, 255);
+  background-image:url("./media/yaoibg.png");
+  background-size:cover;
   color: rgb(47, 0, 90);
 }
 
-#main {
-  background-color: rgb(191, 122, 255);
+.cont {
+  background-color: rgb(191, 122, 255, 0.9);
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   border-radius: 8px;
   padding: 10px;
+  width: 75%;
+}
+
+#header {
+  font-size: xx-large;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+  margin:20px;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 #status {
   font-size: xxx-large;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   margin: 20px;
+  cursor: pointer;
 }
 
 #generateBtn {
@@ -26,10 +37,12 @@ html {
   border-radius: 5px;
   border: none;
   padding: 5px;
+  cursor: pointer;
 }
 
 #disclaimer {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+  font-weight: bold;
 }

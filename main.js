@@ -11,7 +11,14 @@ const lib = {
     "dick",
     "Brazil",
     "hyperpop",
-    "nightcore"
+    "nightcore",
+    "gore",
+    "futa",
+    "Furby",
+    "bottom surgery",
+    "top surgery",
+    "euphoria",
+    "dysphoria"
   ],
   "adj": [
     "based",
@@ -27,7 +34,8 @@ const lib = {
     "gay",
     "lesbian",
     "Brazilian",
-    "NSFW"
+    "NSFW",
+    "fujoshi"
   ],
   "verb": [
     "pumping",
@@ -37,7 +45,8 @@ const lib = {
     "transitioning",
     "uploading furry avatars",
     "watching yaoi",
-    "mirror dwelling"
+    "mirror dwelling",
+    "watching Jerma"
   ],
   "status": [
     "I'm so {adj} and {noun}-pilled",
@@ -56,9 +65,17 @@ const lib = {
     "{noun}... que legal!",
     "{noun} campeão do mundo!!",
     "you're either {adj} or you're {verb}",
-    "enjoying {noun} does not make me {adj}",
     "block me if you don't like {noun}",
-    "I promise I'm not {verb}"
+    "I promise I'm not {verb}",
+    "I only like {adj} {noun}",
+    "allergic to {noun}, pls be mindful",
+    "addicted to {noun}",
+    "paying off {noun} debt",
+    "I am so real for this ({verb})",
+    "{noun} is not a joke",
+    "You can be {adj} without being chronically online",
+    "{noun}-lover up for adoption",
+    "fired for {verb}, anything helps"
   ]
 };
 
@@ -83,9 +100,20 @@ function getStatus() {
   document.getElementById("status").textContent = status;
 };
 
+function copyText() {
+  const statusDiv = document.getElementById("status");
+  const statusText = statusDiv.textContent;
+
+  navigator.clipboard.writeText(statusText);
+}
+
 window.onload = () => {
   const btn = document.getElementById("generateBtn");
   btn.addEventListener('click', getStatus);
+
+  const statusContainer = document.getElementById("statusContainer");
+  statusContainer.addEventListener('click', copyText);
+
   const ferrari = new Audio("./media/Ferrari.mp3");
   ferrari.play();
   getStatus();
