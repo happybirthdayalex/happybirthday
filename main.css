@@ -8,6 +8,7 @@ html {
   background-color: rgb(191, 122, 255, 0.9);
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
   text-align: center;
   border-radius: 8px;
   padding: 10px;
@@ -29,15 +30,23 @@ html {
   cursor: pointer;
 }
 
-#generateBtn {
-  font-size: large;
+#generateBtn, #musicBtn {
   font-weight: bold;
-  margin-bottom: 15px;
   background-color: rgb(107, 255, 179);
   border-radius: 5px;
   border: none;
   padding: 5px;
   cursor: pointer;
+}
+
+#generateBtn {
+  font-size: large;
+  margin-bottom: 15px;
+}
+
+#musicBtn {
+  font-size:small;
+  margin-bottom: none;
 }
 
 #disclaimer {

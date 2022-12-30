@@ -1,3 +1,6 @@
+let music;
+let musicBool = 0;
+
 const lib = {
   "noun": [
     "yaoi",
@@ -105,16 +108,30 @@ function copyText() {
   const statusText = statusDiv.textContent;
 
   navigator.clipboard.writeText(statusText);
-}
+};
+
+function toggleMusic() {
+  if (musicBool === 0) {
+    music.play();
+    musicBool = 1;
+  } else {
+    music.pause();
+    musicBool = 0;
+  }
+};
 
 window.onload = () => {
+  music = new Audio("./media/Ferrari.mp3");
+  music.volume = 0.2;
+
   const btn = document.getElementById("generateBtn");
   btn.addEventListener('click', getStatus);
 
   const statusContainer = document.getElementById("statusContainer");
   statusContainer.addEventListener('click', copyText);
 
-  const ferrari = new Audio("./media/Ferrari.mp3");
-  ferrari.play();
+  const musicBtn = document.getElementById("musicBtn");
+  musicBtn.addEventListener('click', toggleMusic)
+
   getStatus();
 };
